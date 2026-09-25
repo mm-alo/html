@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTING OUT REPORT</title>
+</head>
+ 
+<style>
+    *{
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        margin:0;
+        padding:20px;
+        background:#ffffff;
+    }
+
+    .report{
+        width:900px;
+        margin:auto;
+        border:1px solid #000;
+        padding:25px;
+    }
+
+    .title{
+        text-align:center;
+        font-weight:bold;
+        font-size:28px;
+        margin-bottom:20px;
+    }
+
+    .note{
+        font-style:italic;
+        font-weight:bold;
+        text-decoration:underline;
+        margin-bottom:20px;
+    }
+
+    .top-section{
+        display:flex;
+        justify-content:space-between;
+        gap:40px;
+    }
+
+    .column{
+        width:48%;
+    }
+
+    .field{
+        display:flex;
+        align-items:center;
+        margin-bottom:8px;
+    }
+
+    .label{
+        width:170px;
+        font-weight:bold;
+        font-size:14px;
+    }
+
+    .line{
+        flex:1;
+        border-bottom:2px solid #000;
+        height:20px;
+    }
+
+    .extra-lines{
+        margin-left:170px;
+    }
+
+    .extra-lines div{
+        border-bottom:2px solid #000;
+        height:20px;
+        margin-bottom:8px;
+
+    }
+
+    .middle-section{
+        display:flex;
+        justify-content:space-between;
+        margin-top:40px;
+    }
+
+    .pic-list{
+        width:48%;
+    }
+
+    .sub-title{
+        text-align:center;
+        font-style:italic;
+        font-weight:bold;
+        text-decoration:underline;
+        margin-bottom:10px;
+    }
+
+    .pic-header{
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:10px;
+        font-size:14px;
+    }
+
+    .name-col{
+        width:70%;
+    }
+
+    .dept-col{
+        width:25%;
+    }
+
+    .name-line,
+    .dept-line{
+        border-bottom:2px solid #000;
+        height:16px;
+        margin-bottom:8px;
+    }
+
+    .result-table{
+        width:48%;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+    }
+
+    td{
+        border:1px solid #000;
+        height:42px;
+        font-size:13px;
+        padding:5px;
+        text-align:center;
+    }
+
+    td:first-child{
+        width:50%;
+    }
+
+    .footer{
+        margin-top:25px;
+        font-size:13px;
+        font-weight:bold;
+    }
+
+    .doc-no{
+        font-size:12px;
+        font-weight:normal;
+    }
+</style>
+</head>
+<body>
+
+<div class="report">
+
+    <div class="title">SORTING OUT REPORT</div>
+
+    <div class="note">to be fill up by requesting PIC</div>
+
+    <div class="top-section">
+
+        <div class="column">
+            <div class="field">
+                <div class="label">SAP MATERIAL NAME</div>
+                <input type="hidden" name="DynamicHidden" value="MATNAME01">
+				<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="MATNAME01" 
+				style="margin-left:5px;margin-top:-5px; border-left: hidden;width: 250px; border-top:
+				hidden;border-right: hidden; text-align: center;"  required="required" minlength="1" maxlength="999">
+            </div>
+
+            <div class="field">
+                <div class="label">SAP MATERIAL CODE</div>
+                <input type="hidden" name="DynamicHidden" value="MATCODE01">
+				<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="MATCODE01" 
+				style="margin-left:5px;margin-top:-5px; border-left: hidden;width: 250px; border-top:
+				hidden;border-right: hidden; text-align: center;"  
+				required="required" minlength="1" maxlength="999">
+            </div>
+
+            <div class="field">
+                <div class="label">PRODUCTION LOT. NO.</div>
+                <input type="hidden" name="DynamicHidden" value="PROLOT01">
+				<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PROLOT01" 
+				style="margin-left:5px;margin-top:-5px; border-left: hidden;width: 250px; border-top:
+				hidden;border-right: hidden; text-align: center;" required="required" minlength="1" maxlength="999">
+            </div>
+
+            <div class="extra-lines">
+                <input type="hidden" name="DynamicHidden" value="PROLOT02">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PROLOT02" 
+					style="margin-left:0px;margin-top:-10px; border-left: hidden;width: 235px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+				<input type="hidden" name="DynamicHidden" value="PROLOT03">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PROLOT03" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+                <input type="hidden" name="DynamicHidden" value="PROLOT04">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PROLOT04" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+                <input type="hidden" name="DynamicHidden" value="PROLOT06">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PROLOT06" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+				<input type="hidden" name="DynamicHidden" value="PROLOT07">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PROLOT07" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+				<input type="hidden" name="DynamicHidden" value="PROLOT08">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PROLOT08" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+				<input type="hidden" name="DynamicHidden" value="PROLOT09">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PROLOT09" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+				<input type="hidden" name="DynamicHidden" value="PROLOT10">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PROLOT10" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+                
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="field">
+                <div class="label">SAP LOT NO.</div>
+                <input type="hidden" name="DynamicHidden" value="SAPLOT01">
+				<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="SAPLOT01" 
+				style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+				hidden;border-right: hidden; text-align: center;" required="required"  minlength="1" maxlength="999">
+            </div>
+
+            <div class="field">
+                <div class="label">LOT AFFECTED QTY.</div>
+                <input type="hidden" name="DynamicHidden" value="LOTAFF01">
+				<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="LOTAFF01" 
+				style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+				hidden;border-right: hidden; text-align: center;" required="required" minlength="1" maxlength="999">
+				
+            </div>
+
+            <div class="field">
+                <div class="label">NC ITEM</div>
+                <input type="hidden" name="DynamicHidden" value="NCITEM01">
+				<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NCITEM01" 
+				style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+				hidden;border-right: hidden; text-align: center;" required="required" minlength="1" maxlength="999">
+            </div>
+
+            <div class="extra-lines">
+                <input type="hidden" name="DynamicHidden" value="NCITEM02">
+				<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NCITEM02" 
+				style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+				hidden;border-right: hidden; text-align: center;"title="" minlength="0" maxlength="999">
+				
+				<input type="hidden" name="DynamicHidden" value="NCITEM03">
+				<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NCITEM03" 
+				style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 235px; border-top:
+				hidden;border-right: hidden; text-align: center;"title="" minlength="0" maxlength="999">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="middle-section">
+
+        <div class="pic-list">
+            <div class="sub-title">List of sorting PIC</div>
+
+            <div class="pic-header">
+                <div class="name-col">NAME</div>
+                <div class="dept-col">DEPARTMENT</div>
+            </div>
+
+            <div style="display:flex; gap:15px;">
+                <div class="name-col">
+                    <input type="hidden" name="DynamicHidden" value="NAME01">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME01" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  required="required" minlength="1" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="NAME02">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME02" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="NAME03">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME03" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="NAME04">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME04" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="NAME05">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME05" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="NAME06">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME06" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="NAME07">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME07" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="NAME08">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME08" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="NAME09">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME09" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="NAME10">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NAME10" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 285px; border-top:
+					hidden;border-right: hidden; text-align: center;"  minlength="0" maxlength="999">
+                </div>
+
+                <div class="dept-col">
+                    <input type="hidden" name="DynamicHidden" value="DEPT01">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT01" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" required="required" minlength="1" maxlength="999">
+					
+                    <input type="hidden" name="DynamicHidden" value="DEPT02">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT02" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="DEPT03">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT03" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="DEPT04">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT04" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="DEPT05">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT05" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="DEPT06">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT06" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="DEPT07">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT07" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="DEPT08">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT08" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="DEPT09">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT09" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" minlength="0" maxlength="999">
+					
+					<input type="hidden" name="DynamicHidden" value="DEPT10">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="DEPT10" 
+					style="margin-left:0px;margin-top:-5px; border-left: hidden;width: 100px; border-top:
+					hidden;border-right: hidden; text-align: center;" minlength="0" maxlength="999">
+										
+                </div>
+            </div>
+        </div>
+
+        <div class="result-table">
+            <table>
+                <tr>
+                    <td>SORTED QTY.</td>
+                    <td>
+					<input type="hidden" name="DynamicHidden" value="SORTQTY01">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="SORTQTY01" 
+					style="margin-left:0px;width: -webkit-fill-available; border: none;" required="required" minlength="1" maxlength="999">
+					</td>
+                </tr>
+                <tr>
+                    <td>NON-CONFORMANCE QTY.</td>
+                    <td>
+					<input type="hidden" name="DynamicHidden" value="NCQTY01">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="NCQTY01" 
+					style="margin-left:0px;width: -webkit-fill-available; border: none;" required="required" minlength="1" maxlength="999">
+					</td>
+                </tr>
+                <tr>
+                    <td>SORT OUT METHOD</td>
+                    <td>
+					<input type="hidden" name="DynamicHidden" value="METHOD01">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="METHOD01" 
+					style="margin-left:0px;width: -webkit-fill-available; border: none;" required="required" minlength="1" maxlength="999">
+					</td>
+                </tr>
+                <tr>
+                    <td>RE-INSPECTION RESULT/DATA</td>
+                    <td>
+					<input type="hidden" name="DynamicHidden" value="RINS01">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="RINS01" 
+					style="margin-left:0px;width: -webkit-fill-available; border: none;" required="required" minlength="1" maxlength="999">
+					</td>
+                </tr>
+                <tr>
+                    <td>RE-WEIGH BY: (for FG lots only)</td>
+                    <td>
+					<input type="hidden" name="DynamicHidden" value="RWEIGH01">
+					<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="RWEIGH01" 
+					style="margin-left:0px;width: -webkit-fill-available; border: none;" required="required" minlength="1" maxlength="999">
+					</td>
+                </tr>
+                <tr>
+                    <td>REMARKS</td>
+                    <td>
+					<input type="hidden" name="DynamicHidden" value="REMARKS">
+					<textarea type="textarea" name="DynamicInput" class="form-control k-textbox" id="REMARKS" rows="5" 
+					style="margin-left:0px;width: -webkit-fill-available; border: none; resize: none;" required="required" minlength="1" maxlength="999"></textarea>
+					</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        FORM FLOW: REQUESTOR -> DEPT MGR. -> QC VERIFICATION -> QC APPROVAL -> RELEASE
+        <br>
+        <span class="doc-no">SPH-REC-QCX-095 REV.1.0</span>
+    </div>
+
+</div>
+
+</body>
+</html>

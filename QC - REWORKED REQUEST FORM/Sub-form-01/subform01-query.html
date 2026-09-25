@@ -1,0 +1,86 @@
+<div style="border:2px solid #333;padding:10px 15px;max-width:500px;font-family:Arial,Helvetica,sans-serif;">
+
+    <div style="display:flex;align-items:center;margin-bottom:12px;font-size:12px;font-weight:bold;letter-spacing:0.5px;">
+        <span>REFERENCE NO. SPH-QCX-REW-</span>
+
+        <div style="margin-left:10px;border-bottom:1px solid #000;width:150px;">
+            <input type="hidden" name="DynamicHidden" value="refno">
+            <input type="textbox"
+                   name="DynamicInput"
+                   class="form-control k-textbox"
+                   id="refno"
+                   required="required"
+                   minlength="1"
+                   maxlength="999"
+                   style="width:100%;border:none;outline:none;background:transparent;font-size:11px;height:18px;">
+        </div>
+    </div>
+
+    <div style="text-align:center;font-size:13px;font-weight:bold;margin-bottom:15px;">
+        ATTACHMENT CHECKLIST
+    </div>
+
+    <input type="hidden" name="DynamicHidden" value="checklist">
+    <input type="hidden" id="checklist" name="DynamicInput">
+
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:11px;font-weight:bold;line-height:12px;">
+        <input class="myBox"
+               required=""
+               type="checkbox"
+               onchange="GetValueCheckBox('checklist')"
+               id="chk_checklistrEWORK CHECKLIST"
+               name="chk_checklist"
+               value="rEWORK CHECKLIST"
+               style="width:12px;height:12px;">
+        <label for="chk_checklistrEWORK CHECKLIST" style="margin:0; padding-top: 6px;">REWORK CHECKLIST</label>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:11px;font-weight:bold;line-height:12px;">
+        <input class="myBox"
+               required=""
+               type="checkbox"
+               onchange="GetValueCheckBox('checklist')"
+               id="chk_checklistW.I/OPL"
+               name="chk_checklist"
+               value="W.I/OPL"
+               style="width:12px;height:12px;">
+        <label for="chk_checklistW.I/OPL" style="margin:0;">W.I/OPL</label>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:11px;font-weight:bold;line-height:12px;">
+        <input class="myBox"
+               required=""
+               type="checkbox"
+               onchange="GetValueCheckBox('checklist')"
+               id="chk_checklistCPK"
+               name="chk_checklist"
+               value="CPK"
+               style="width:12px;height:12px;">
+        <label for="chk_checklistCPK" style="margin:0;">CPK</label>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;font-size:11px;font-weight:bold;line-height:12px;">
+        <input class="myBox"
+               required=""
+               type="checkbox"
+               onchange="GetValueCheckBox('checklist')"
+               id="chk_checklistOTHERS (SPECIFY)"
+               name="chk_checklist"
+               value="OTHERS (SPECIFY)"
+               style="width:12px;height:12px;">
+        <label for="chk_checklistOTHERS (SPECIFY)" style="margin:0;">OTHERS (SPECIFY)</label>
+    </div>
+
+    <div style="margin-top:2px;width:50%;border-bottom:1px solid #000;">
+        <input type="hidden" name="DynamicHidden" value="Others">
+        <input type="textbox"
+               name="DynamicInput"
+               class="form-control k-textbox"
+               id="Others"
+               required="required"
+               minlength="1"
+               maxlength="999"
+               style="width:100%;border:none;outline:none;background:transparent;font-size:11px;height:18px;">
+    </div>
+
+</div>

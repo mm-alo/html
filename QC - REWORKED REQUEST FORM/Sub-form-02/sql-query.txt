@@ -1,0 +1,203 @@
+BEGIN TRAN
+UPDATE TFormD SET AdvanceLayoutHTML = '
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REWORKED REQUEST FORM</title>
+</head>
+
+<body>
+
+<div style="border:2px solid #000;padding-top:20px; padding-bottom: 20px; font-family:Arial,Helvetica,sans-serif;width:900px;">
+
+    <table style="width:90%;margin:0 auto 10px auto;border-collapse:collapse;border:2px solid #000;">
+        <tr>
+            <th style="border:2px solid #000;height:40px;font-size:16px;width:58%;text-align:center;">
+                Production lot Number
+            </th>
+            <th style="border:2px solid #000;height:40px;font-size:16px;width:32%;text-align:left;padding-left:15px;">
+                Judgement
+            </th>
+        </tr>
+
+        <tr>
+            <td style="border:1px solid #000;">
+                <input type="hidden" name="DynamicHidden" value="PLOT01">
+                <input type="textbox" name="DynamicInput" class="form-control k-textbox" id="PLOT01" required="required" minlength="1" maxlength="999" style="width:100%;border:none;height:28px;">
+            </td>
+            <td style="border:2px solid #000;">
+                <input type="hidden" name="DynamicHidden" value="JDG01">
+                <input type="textbox" name="DynamicInput" class="form-control k-textbox" id="JDG01" required="required" minlength="1" maxlength="999" style="width:100%;border:none;height:28px;">
+            </td>
+        </tr>
+
+        <tr>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="PLOT02"><input type="textbox" name="DynamicInput" id="PLOT02" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="JDG02"><input type="textbox" name="DynamicInput" id="JDG02" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+        </tr>
+
+        <tr>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="PLOT03"><input type="textbox" name="DynamicInput" id="PLOT03" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="JDG03"><input type="textbox" name="DynamicInput" id="JDG03" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+        </tr>
+
+        <tr>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="PLOT04"><input type="textbox" name="DynamicInput" id="PLOT04" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="JDG04"><input type="textbox" name="DynamicInput" id="JDG04" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+        </tr>
+
+        <tr>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="PLOT05"><input type="textbox" name="DynamicInput" id="PLOT05" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="JDG05"><input type="textbox" name="DynamicInput" id="JDG05" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+        </tr>
+
+        <tr>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="PLOT06"><input type="textbox" name="DynamicInput" id="PLOT06" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="JDG06"><input type="textbox" name="DynamicInput" id="JDG06" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+        </tr>
+
+        <tr>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="PLOT07"><input type="textbox" name="DynamicInput" id="PLOT07" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="JDG07"><input type="textbox" name="DynamicInput" id="JDG07" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+        </tr>
+
+        <tr>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="PLOT08"><input type="textbox" name="DynamicInput" id="PLOT08" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="JDG08"><input type="textbox" name="DynamicInput" id="JDG08" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+        </tr>
+
+        <tr>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="PLOT09"><input type="textbox" name="DynamicInput" id="PLOT09" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="JDG09"><input type="textbox" name="DynamicInput" id="JDG09" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+        </tr>
+
+        <tr>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="PLOT10"><input type="textbox" name="DynamicInput" id="PLOT10" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+            <td style="border:2px solid #000;"><input type="hidden" name="DynamicHidden" value="JDG10"><input type="textbox" name="DynamicInput" id="JDG10" class="form-control k-textbox" style="width:100%;border:none;height:28px;"></td>
+        </tr>
+    </table>
+
+    <div style="font-style:italic;font-size:14px;margin:12px 0 0px 45px;">
+        Fill up by QC
+    </div>
+	<div style="font-size:11px;text-align:center;margin-bottom:8px; margin-right:-150px;">
+            REPLENISH VERIFIED QC PIC
+        </div>
+
+    <div style="display:flex;align-items:flex-start;gap:35px;margin:0 35px 0px 35px;">
+
+        <div style="display:flex;align-items:flex-start;gap:15px;">
+
+    <!-- LOT QTY -->
+    <div style="border:2px solid #000;width:110px;height:90px;padding:8px;box-sizing:border-box;">
+        <div style="font-weight:bold;font-size:14px;">
+            LOT QTY
+        </div>
+
+        <input type="hidden" name="DynamicHidden" value="LOTQTY">
+        <textarea name="DynamicInput"
+                  id="LOTQTY"
+                  required="required"
+                  minlength="1"
+                  maxlength="999"
+                  style="width:100%;height:55px;border:0;outline:none;background:transparent;resize:none;padding:0;margin-top:8px;"></textarea>
+    </div>
+
+    <!-- QTY AFTER CORRECTIVE ACTION -->
+    <div style="border:2px solid #000;width:260px;height:90px;padding:8px;box-sizing:border-box;">
+        <div style="font-weight:bold;font-size:14px;text-align:center;">
+            QTY AFTER CORRECTIVE ACTION
+        </div>
+
+        <input type="hidden" name="DynamicHidden" value="QTYACA">
+        <textarea name="DynamicInput"
+                  id="QTYACA"
+                  required="required"
+                  minlength="1"
+                  maxlength="999"
+                  style="width:100%;height:65px;border:0;outline:none;background:transparent;resize:none;padding:0;margin-top:8px;"></textarea>
+    </div>
+
+    <!-- REPLENISH -->
+    <div style="width:180px;">
+
+        <div style="border:2px solid #000;width:180px;height:90px;padding:8px;box-sizing:border-box;">
+            <div style="font-weight:bold;font-size:14px;text-align:center;">
+                REPLENISH QTY
+            </div>
+
+            <input type="hidden" name="DynamicHidden" value="REQTY">
+            <textarea name="DynamicInput"
+                      id="REQTY"
+                      required="required"
+                      minlength="1"
+                      maxlength="999"
+                      style="width:100%;height:55px;border:0;outline:none;background:transparent;resize:none;padding:0;margin-top:8px;"></textarea>
+        </div>
+
+    </div>
+
+</div>
+
+        <div style="width:220px;">
+
+            <div style="font-weight:bold;font-size:14px;margin-bottom:6px;">
+                RE-INSPECTION RESULT
+            </div>
+
+            <input type="hidden" name="DynamicHidden" value="RIRESULT">
+            <input type="hidden" id="RIRESULT" name="DynamicInput">
+
+            <div style="margin-bottom:6px;">      
+                <input class="myRad"
+                       type="radio"
+                       required=""
+                       onchange="GetValueRadio(`RIRESULT`)"
+                       style="margin-left:-10px"
+                       id="rad_RIRESULTACCEPTED"
+                       name="rad_RIRESULT"
+                       value="ACCEPTED">
+                <label for="rad_RIRESULTACCEPTED" style="font-weight:bold; font-size: 14px;">
+                    ACCEPTED
+                </label>
+            </div>
+
+            <div>                
+                <input class="myRad"
+                       type="radio"
+                       required=""
+                       onchange="GetValueRadio(`RIRESULT`)"
+                       style="margin-left:-10px"
+                       id="rad_RIRESULTREJECTED"
+                       name="rad_RIRESULT"
+                       value="REJECTED">
+                <label for="rad_RIRESULTREJECTED" style="font-weight:bold; font-size: 14px">
+                    REJECTED
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="border:2px solid #000;width:300px;height:90px;padding:8px;margin-left:35px; margin-top:18px;">
+        <div style="font-weight:bold;font-size:14px;margin-bottom:6px;">
+            REMARKS:
+        </div>
+
+        <input type="hidden" name="DynamicHidden" value="RMRK">
+        <textarea name="DynamicInput"
+                  id="RMRK"
+                  required="required"
+                  minlength="1"
+                  maxlength="999"
+                  style="width:100%;height:55px;border:0;outline:none;background:transparent;resize:none;padding:0;"></textarea>
+    </div>
+
+</div>
+</body>
+</html>'
+WHERE FormNoH = 'SPH-QC002' AND SubFormNo = 'SUBFORM-02'
+    
+    commit

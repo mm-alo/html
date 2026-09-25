@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTING OUT REPORT</title>
+</head>
+
+<body style="font-family:Arial,Helvetica,sans-serif;">
+
+
+<table style="width:760px;border:2px solid #000;border-collapse:collapse;">
+<tr>
+
+<td style="width:33%;padding:18px;">
+    <div style="border:2px solid #000;height:100px;padding:10px;">
+        
+        <div style="
+            text-align:center;
+            font-weight:bold;
+            font-size:14px;
+            margin-top:5px;
+            white-space:nowrap;">
+            QTY AFTER COUNTERACTION
+        </div>
+
+        <input type="hidden" name="DynamicHidden" value="qtyac">
+
+        <input
+    type="textbox"
+    name="DynamicInput"
+    class="form-control k-textbox"
+    id="qtyac"
+    style="
+        width:90%;
+        margin-top:18px;
+        margin-left:5%;
+        background:transparent;
+        border:none;
+        border-bottom:1px solid #000;
+        border-radius:0;
+        box-shadow:none;
+        outline:none;
+        text-align:center;"
+    required="required"
+    minlength="1"
+    maxlength="999">
+
+    </div>
+</td>
+
+<td style="width:33%;padding:18px;">
+    <div style="border:2px solid #000;height:100px;padding:10px;">
+
+        <div style="
+            text-align:center;
+            font-weight:bold;
+            font-size:14px;
+            margin-top:5px;
+            white-space:nowrap;">
+            REPLACED QTY
+        </div>
+
+        <input type="hidden" name="DynamicHidden" value="rplcqty">
+
+        
+<input
+    type="textbox"
+    name="DynamicInput"
+    class="form-control k-textbox"
+    id="rplcqty"
+    style="
+        width:90%;
+        margin-top:18px;
+        margin-left:5%;
+        background:transparent;
+        border:none;
+        border-bottom:1px solid #000;
+        border-radius:0;
+        box-shadow:none;
+        outline:none;
+        text-align:center;"
+    required="required"
+    minlength="1"
+    maxlength="99">
+    </div>
+</td>
+
+<td style="width:34%;padding:18px;">
+    <div style="border:2px solid #000;height:100px;padding:10px;">
+
+        <div style="
+            text-align:center;
+            font-weight:bold;
+            font-size:14px;
+            margin-top:5px;
+            margin-bottom:10px;
+            white-space:nowrap;">
+            REINSPECTION RESULT
+        </div>
+
+        <input type="hidden" name="DynamicHidden" value="riresult">
+
+        <input
+            type="hidden"
+            id="riresult"
+            name="DynamicInput">
+
+        <table style="margin-left:15px;">
+            <tr>
+                <td style="width:25px;">
+                    <input class="myRad" type="radio" required="" onchange="GetValueRadio(`riresult`)" style="margin-left:-10px" id="rad_riresultaccepted" name="rad_riresult" value="accepted">	
+                </td>
+                <td>ACCEPTED</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input class="myRad" type="radio" required="" onchange="GetValueRadio(`riresult`)" style="margin-left:-10px" id="rad_riresultrejected" name="rad_riresult" value="rejected">
+                </td>
+                <td>REJECTED</td>
+            </tr>
+        </table>
+
+    </div>
+</td>
+
+</tr>
+</table>
+
+
+</body>
+</html>
