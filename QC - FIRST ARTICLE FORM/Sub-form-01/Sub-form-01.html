@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Testing Item</title>
+</head>
+<body style="margin:0; padding:8px; background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; color:#000000;">
+
+    <div style="width:780px; margin:0 auto; padding:10px 12px 12px 12px; border:2px solid #000000; box-sizing:border-box; background-color:#ffffff;">
+
+        <div style="display:flex; align-items:flex-start; width:100%; box-sizing:border-box;">
+
+            <div style="flex:0 0 92px; padding-top:2px; box-sizing:border-box; font-size:10px; line-height:16px; font-weight:bold; white-space:nowrap;">
+                QA TESTING:
+            </div>
+
+            <div style="flex:0 0 118px; padding-left:8px; box-sizing:border-box;">
+
+                <input type="hidden" name="DynamicHidden" value="QAtesting">
+                <input type="hidden" id="QAtesting" name="DynamicInput">
+
+                <label for="chk_QAtestingfunctionality" style="display:flex; align-items:center; gap:7px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
+                    <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" style="margin:0; width:14px; height:14px; flex:0 0 14px;" id="chk_QAtestingfunctionality" name="chk_QAtesting" value="functionality">
+                    NO REQUIRED
+                </label>
+
+            </div>
+
+            <div style="flex:0 0 174px; padding-left:10px; box-sizing:border-box;">
+
+                <label for="chk_QAtestingdurability" style="display:flex; align-items:center; gap:7px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
+                    <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" style="margin:0; width:14px; height:14px; flex:0 0 14px;" id="chk_QAtestingdurability" name="chk_QAtesting" value="durability">
+                    REQUIRED, PLEASE TICK:
+                </label>
+
+                <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" style="display:none;" id="chk_QAtestingstrength" name="chk_QAtesting" value="strength" disabled>
+
+                <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" style="display:none;" id="chk_QAtestingassembly test" name="chk_QAtesting" value="assembly test" disabled>
+
+            </div>
+
+            <div style="flex:1; display:grid; grid-template-columns:1fr 1fr; column-gap:24px; row-gap:7px; padding-left:8px; box-sizing:border-box;">
+
+                <input type="hidden" name="DynamicHidden" value="tick">
+                <input type="hidden" id="tick" name="DynamicInput">
+
+                <label for="chk_tickfunctionality" style="display:flex; align-items:center; gap:8px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
+                    <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" style="margin:0; width:14px; height:14px; flex:0 0 14px;" id="chk_tickfunctionality" name="chk_tick" value="functionality">
+                    FUNCTIONALITY
+                </label>
+
+                <label for="chk_tickdurability" style="display:flex; align-items:center; gap:8px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
+                    <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" style="margin:0; width:14px; height:14px; flex:0 0 14px;" id="chk_tickdurability" name="chk_tick" value="durability">
+                    DURABILITY
+                </label>
+
+                <label for="chk_tickstrength" style="display:flex; align-items:center; gap:8px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
+                    <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" style="margin:0; width:14px; height:14px; flex:0 0 14px;" id="chk_tickstrength" name="chk_tick" value="strength">
+                    STRENGTH
+                </label>
+
+                <label for="chk_tickassembly test" style="display:flex; align-items:center; gap:8px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
+                    <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" style="margin:0; width:14px; height:14px; flex:0 0 14px;" id="chk_tickassembly test" name="chk_tick" value="assembly test">
+                    ASSEMBLY TEST
+                </label>
+
+            </div>
+
+        </div>
+
+        <div style="display:flex; align-items:center; width:100%; margin-top:10px; box-sizing:border-box;">
+
+            <div style="flex:0 0 160px; box-sizing:border-box; font-size:10px; line-height:18px; font-weight:bold; text-align:right; white-space:nowrap;">
+                TESTING ITEM:
+            </div>
+
+            <div style="flex:0 0 280px; padding-left:10px; box-sizing:border-box;">
+
+                <input type="hidden" name="DynamicHidden" value="TestingItem">
+                <textarea name="DynamicInput" class="form-control k-textbox" id="TestingItem" data-tooggle="tooltip" data-placement="top" title="" minlength="0" maxlength="999" style="display:block; width:100%; height:21px; min-height:21px; margin:0; padding:1px 2px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:hidden; box-sizing:border-box; background:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:18px;"></textarea>
+
+            </div>
+
+            <div style="flex:1; box-sizing:border-box;"></div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+            var noRequiredCheckbox;
+            var requiredCheckbox;
+            var tickCheckboxes;
+            var testingItem;
+            var qaTestingInput;
+            var tickInput;
+
+            function loadElements() {
+                noRequiredCheckbox = document.getElementById("chk_QAtestingfunctionality");
+                requiredCheckbox = document.getElementById("chk_QAtestingdurability");
+                tickCheckboxes = document.getElementsByName("chk_tick");
+                testingItem = document.getElementById("TestingItem");
+                qaTestingInput = document.getElementById("QAtesting");
+                tickInput = document.getElementById("tick");
+            }
+
+            function isAnyTickChecked() {
+                var index;
+
+                for (index = 0; index < tickCheckboxes.length; index++) {
+                    if (tickCheckboxes[index].checked) {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+
+            function clearTickRequirements() {
+                var index;
+
+                for (index = 0; index < tickCheckboxes.length; index++) {
+                    tickCheckboxes[index].removeAttribute("required");
+                    tickCheckboxes[index].setCustomValidity("");
+                }
+            }
+
+            function clearTickValues() {
+                var index;
+
+                for (index = 0; index < tickCheckboxes.length; index++) {
+                    tickCheckboxes[index].checked = false;
+                    tickCheckboxes[index].removeAttribute("required");
+                    tickCheckboxes[index].setCustomValidity("");
+                }
+
+                if (tickInput) {
+                    tickInput.value = "";
+                }
+
+                if (typeof GetValueCheckBox === "function") {
+                    GetValueCheckBox("tick");
+                }
+            }
+
+            function updateModeRequirement() {
+                var modeSelected;
+
+                modeSelected = noRequiredCheckbox.checked || requiredCheckbox.checked;
+
+                noRequiredCheckbox.removeAttribute("required");
+                requiredCheckbox.removeAttribute("required");
+                noRequiredCheckbox.setCustomValidity("");
+                requiredCheckbox.setCustomValidity("");
+
+                if (!modeSelected) {
+                    noRequiredCheckbox.setAttribute("required", "required");
+                }
+            }
+
+            function updateConditionalRequirements() {
+                var requiredModeSelected;
+                var tickSelected;
+
+                requiredModeSelected = requiredCheckbox.checked;
+                tickSelected = isAnyTickChecked();
+
+                clearTickRequirements();
+
+                if (requiredModeSelected && !tickSelected && tickCheckboxes.length > 0) {
+                    tickCheckboxes[0].setAttribute("required", "required");
+                }
+
+                testingItem.setCustomValidity("");
+
+                if (requiredModeSelected) {
+                    testingItem.setAttribute("required", "required");
+                } else {
+                    testingItem.removeAttribute("required");
+                }
+            }
+
+            function noRequiredChanged() {
+                if (noRequiredCheckbox.checked) {
+                    requiredCheckbox.checked = false;
+
+                    clearTickValues();
+
+                    testingItem.value = "";
+                    testingItem.removeAttribute("required");
+                    testingItem.setCustomValidity("");
+                }
+
+                if (typeof GetValueCheckBox === "function") {
+                    GetValueCheckBox("QAtesting");
+                }
+
+                updateModeRequirement();
+                updateConditionalRequirements();
+            }
+
+            function requiredChanged() {
+                if (requiredCheckbox.checked) {
+                    noRequiredCheckbox.checked = false;
+                }
+
+                if (typeof GetValueCheckBox === "function") {
+                    GetValueCheckBox("QAtesting");
+                }
+
+                updateModeRequirement();
+                updateConditionalRequirements();
+            }
+
+            function tickChanged() {
+                if (typeof GetValueCheckBox === "function") {
+                    GetValueCheckBox("tick");
+                }
+
+                updateConditionalRequirements();
+            }
+
+            function splitSavedValues(savedValue) {
+                var parts;
+                var results;
+                var index;
+                var cleanedValue;
+
+                results = [];
+
+                if (!savedValue) {
+                    return results;
+                }
+
+                parts = savedValue.split(",");
+
+                if (parts.length === 1) {
+                    parts = savedValue.split(";");
+                }
+
+                if (parts.length === 1) {
+                    parts = savedValue.split("|");
+                }
+
+                for (index = 0; index < parts.length; index++) {
+                    cleanedValue = parts[index].trim().toLowerCase();
+
+                    if (cleanedValue !== "") {
+                        results.push(cleanedValue);
+                    }
+                }
+
+                return results;
+            }
+
+            function valueExists(values, targetValue) {
+                var index;
+                var normalizedTarget;
+
+                normalizedTarget = targetValue.toLowerCase();
+
+                for (index = 0; index < values.length; index++) {
+                    if (values[index] === normalizedTarget) {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+
+            function restoreMode() {
+                var savedValues;
+
+                if (!qaTestingInput || !qaTestingInput.value) {
+                    return;
+                }
+
+                savedValues = splitSavedValues(qaTestingInput.value);
+
+                noRequiredCheckbox.checked = valueExists(
+                    savedValues,
+                    noRequiredCheckbox.value
+                );
+
+                requiredCheckbox.checked = valueExists(
+                    savedValues,
+                    requiredCheckbox.value
+                );
+
+                if (requiredCheckbox.checked) {
+                    noRequiredCheckbox.checked = false;
+                }
+            }
+
+            function restoreTicks() {
+                var savedValues;
+                var index;
+
+                if (!tickInput || !tickInput.value) {
+                    return;
+                }
+
+                savedValues = splitSavedValues(tickInput.value);
+
+                for (index = 0; index < tickCheckboxes.length; index++) {
+                    tickCheckboxes[index].checked = valueExists(
+                        savedValues,
+                        tickCheckboxes[index].value
+                    );
+                }
+            }
+
+            function initializeForm() {
+                var index;
+
+                loadElements();
+
+                if (
+                    !noRequiredCheckbox ||
+                    !requiredCheckbox ||
+                    !testingItem ||
+                    !qaTestingInput ||
+                    !tickInput
+                ) {
+                    return;
+                }
+
+                noRequiredCheckbox.addEventListener("change", noRequiredChanged);
+                requiredCheckbox.addEventListener("change", requiredChanged);
+
+                for (index = 0; index < tickCheckboxes.length; index++) {
+                    tickCheckboxes[index].addEventListener(
+                        "change",
+                        tickChanged
+                    );
+                }
+
+                restoreMode();
+                restoreTicks();
+                updateModeRequirement();
+                updateConditionalRequirements();
+            }
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", initializeForm);
+            } else {
+                initializeForm();
+            }
+
+            window.setTimeout(function () {
+                loadElements();
+
+                if (
+                    noRequiredCheckbox &&
+                    requiredCheckbox &&
+                    testingItem &&
+                    qaTestingInput &&
+                    tickInput
+                ) {
+                    restoreMode();
+                    restoreTicks();
+                    updateModeRequirement();
+                    updateConditionalRequirements();
+                }
+            }, 300);
+        }());
+    </script>
+
+</body>
+</html>
