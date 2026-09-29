@@ -1,0 +1,36 @@
+
+
+<input type="hidden" name="DynamicHidden" value="QAtesting">                         
+<input type="hidden" id="QAtesting" name="DynamicInput">
+
+<input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" 
+style="margin-left:-10px" id="chk_QAtestingassembly test" name="chk_QAtesting" value="assembly test">
+
+<input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" 
+style="margin-left:-10px" id="chk_QAtestingdurability" name="chk_QAtesting" value="durability">
+
+<input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" 
+style="margin-left:-10px" id="chk_QAtestingfunctionality" name="chk_QAtesting" value="functionality">
+
+<input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" 
+style="margin-left:-10px" id="chk_QAtestingstrength" name="chk_QAtesting" value="strength">
+
+<input type="hidden" name="DynamicHidden" value="tick">                         
+<input type="hidden" id="tick" name="DynamicInput">
+
+<input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" 
+style="margin-left:-10px" id="chk_tickassembly test" name="chk_tick" value="assembly test">
+
+<input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" 
+style="margin-left:-10px" id="chk_tickdurability" name="chk_tick" value="durability">
+
+<input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" 
+style="margin-left:-10px" id="chk_tickfunctionality" name="chk_tick" value="functionality">
+
+<input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" 
+style="margin-left:-10px" id="chk_tickstrength" name="chk_tick" value="strength">
+
+<input type="hidden" name="DynamicHidden" value="TestingItem">
+<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="TestingItem" 
+style="margin-left:0px;width: -webkit-fill-available;" data-tooggle="tooltip" data-placement="top" title="" minlength="0" maxlength="999">
+                        
