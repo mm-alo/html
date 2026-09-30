@@ -250,13 +250,13 @@
                 <div style="grid-column:1 / 3; display:flex; align-items:center; min-width:0;">
                     <span style="font-size:8px; white-space:nowrap;">1) LOCALIZATION PART REQUISITION REF:</span>
                     <input type="hidden" name="DynamicHidden" value="localizationreqref">
-                    <textarea name="DynamicInput" class="form-control k-textbox" id="localizationreqref" required="required" minlength="1" maxlength="999" style="display:block; flex:1; height:18px; min-height:18px; margin:0 0 0 3px; padding:1px 2px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:hidden; box-sizing:border-box; background:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:8px; line-height:15px;"></textarea>
+                    <textarea name="DynamicInput" class="form-control k-textbox" id="localizationreqref" minlength="0" maxlength="999" style="display:block; flex:1; height:18px; min-height:18px; margin:0 0 0 3px; padding:1px 2px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:hidden; box-sizing:border-box; background:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:8px; line-height:15px;"></textarea>
                 </div>
 
                 <div style="display:flex; align-items:center; min-width:0;">
                     <span style="font-size:8px; white-space:nowrap;">2) QC REPORT REF:</span>
                     <input type="hidden" name="DynamicHidden" value="qcref">
-                    <textarea name="DynamicInput" class="form-control k-textbox" id="qcref" required="required" minlength="1" maxlength="999" style="display:block; flex:1; height:18px; min-height:18px; margin:0 0 0 3px; padding:1px 2px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:hidden; box-sizing:border-box; background:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:8px; line-height:15px;"></textarea>
+                    <textarea name="DynamicInput" class="form-control k-textbox" id="qcref" minlength="0" maxlength="999" style="display:block; flex:1; height:18px; min-height:18px; margin:0 0 0 3px; padding:1px 2px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:hidden; box-sizing:border-box; background:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:8px; line-height:15px;"></textarea>
                 </div>
             </div>
         </div>
@@ -277,30 +277,6 @@
                 <label for="chk_timesubmission6th" style="display:flex; align-items:center; gap:2px; margin:0; font-size:9px;"><input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`timesubmission`)" style="margin:0; width:12px; height:12px;" id="chk_timesubmission6th" name="chk_timesubmission" value="6th">6TH</label>
                 <label for="chk_timesubmission7th" style="display:flex; align-items:center; gap:2px; margin:0; font-size:9px;"><input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`timesubmission`)" style="margin:0; width:12px; height:12px;" id="chk_timesubmission7th" name="chk_timesubmission" value="7th">7TH</label>
                 <label for="chk_timesubmission8th" style="display:flex; align-items:center; gap:2px; margin:0; font-size:9px;"><input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`timesubmission`)" style="margin:0; width:12px; height:12px;" id="chk_timesubmission8th" name="chk_timesubmission" value="8th">8TH</label>
-            </div>
-        </div>
-
-        <div style="min-height:48px; display:flex; align-items:center; padding:7px 4px; border-bottom:1px solid #000000; box-sizing:border-box;">
-
-            <div style="font-size:10px; font-weight:bold; white-space:nowrap;">SGP COMPLIANCE:</div>
-
-            <input type="hidden" name="DynamicHidden" value="sgpcompliance">
-            <input type="hidden" id="sgpcompliance" name="DynamicInput">
-
-            <label for="chk_sgpcomplianceyes" style="display:flex; align-items:center; gap:6px; margin:0 0 0 13px; font-size:9px;">
-                <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`sgpcompliance`)" style="margin:0; width:13px; height:13px;" id="chk_sgpcomplianceyes" name="chk_sgpcompliance" value="yes">
-                YES
-            </label>
-
-            <label for="chk_sgpcomplianceno related" style="display:flex; align-items:center; gap:6px; margin:0 0 0 24px; font-size:9px; white-space:nowrap;">
-                <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`sgpcompliance`)" style="margin:0; width:13px; height:13px;" id="chk_sgpcomplianceno related" name="chk_sgpcompliance" value="no related">
-                NO RELATED
-            </label>
-
-            <div style="display:flex; align-items:center; flex:1; min-width:0; margin-left:16px;">
-                <span style="padding:3px 4px; border:2px solid #000000; box-sizing:border-box; font-size:8px; white-space:nowrap;">COMPLIANCE CONTROL NO:</span>
-                <input type="hidden" name="DynamicHidden" value="complianceno">
-                <textarea name="DynamicInput" class="form-control k-textbox" id="complianceno" required="required" minlength="1" maxlength="999" style="display:block; flex:1; height:21px; min-height:21px; margin:0 0 0 4px; padding:1px 2px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:hidden; box-sizing:border-box; background:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:9px; line-height:17px;"></textarea>
             </div>
         </div>
 
