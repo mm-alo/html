@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Article Approval Notice</title>
 </head>
-
 <body style="margin:0; padding:8px; background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; color:#000000;">
 
-    <div style="width:650px; margin:0; border:2px solid #000000; box-sizing:border-box; background-color:#ffffff;">
+    <div style="width:650px; max-width:100%; margin:0; border:2px solid #000000; box-sizing:border-box; background-color:#ffffff;">
 
         <!-- APPROVAL STATEMENT -->
         <div style="height:42px; display:flex; align-items:center; justify-content:center; padding:4px 8px; border-bottom:1px solid #000000; box-sizing:border-box; font-size:11px; line-height:15px; font-weight:bold; text-align:center;">
@@ -34,11 +33,13 @@
                     <div style="flex:1; box-sizing:border-box;">
 
                         <input type="hidden" name="DynamicHidden" value="qcmanagement">
-                        <input type="textbox" name="DynamicInput" class="form-control k-textbox" id="qcmanagement" style="display:block; width:100%; height:22px; margin-left:0px; padding:1px 3px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; box-sizing:border-box; background-color:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:18px;" required="required" minlength="1" maxlength="999">
+                        <textarea name="DynamicInput" class="form-control k-textbox" id="qcmanagement" required="required" minlength="1" maxlength="999" style="display:block; width:100%; height:22px; min-height:22px; margin:0; padding:1px 3px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:hidden; box-sizing:border-box; background-color:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:18px;"></textarea>
 
-                        <div style="display:flex; justify-content:center; width:100%; margin-top:3px; box-sizing:border-box;">
+                        <div style="display:flex; align-items:center; justify-content:center; width:100%; margin-top:3px; box-sizing:border-box;">
+
                             <input type="hidden" name="DynamicHidden" value="qcdate">
-                            <input type="date" class="form-control" name="DynamicInput" id="qcdate" placeholder="Select date" inline="true" style="margin-left:0px; border-radius:7px; width:105px; height:20px; padding:0 2px; border:0 !important; box-shadow:none !important; outline:none !important; box-sizing:border-box; background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:8px;">
+                            <input type="date" class="form-control" name="DynamicInput" id="qcdate" placeholder="Select date" inline="true" style="display:block; width:105px; height:20px; margin:0; padding:0 2px; border:0 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; box-sizing:border-box; background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:8px; color:#000000;">
+
                         </div>
 
                     </div>
@@ -66,39 +67,70 @@
 
                 </div>
 
-                <div style="display:flex; width:100%; height:69px; box-sizing:border-box;">
+                <div style="display:flex; position:relative; width:100%; height:69px; box-sizing:border-box;">
 
-                    <div style="width:50%; height:100%; border-right:1px solid #000000; box-sizing:border-box;">
+                    <input type="hidden" name="DynamicHidden" value="fajudgement">
+                    <input type="hidden" id="fajudgement" name="DynamicInput">
 
-                        <input type="hidden" name="DynamicHidden" value="faaccepted">
+                    <!-- FA ACCEPTED BOX -->
+                    <label for="chk_fajudgementfaaccepted" id="label_fajudgementfaaccepted" style="width:50%; height:100%; display:flex; align-items:center; justify-content:center; margin:0; border-right:1px solid #000000; box-sizing:border-box; background-color:#ffffff; cursor:pointer;">
 
-                        <textarea type="textarea"
-                                  name="DynamicInput"
-                                  class="form-control k-textbox"
-                                  id="faaccepted"
-                                  rows="5"
-                                  style="display:block; width:100%; height:100%; margin-left:0px; padding:4px; border:0 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:auto; box-sizing:border-box; background-color:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px;"
-                                  required="required"
-                                  minlength="1"
-                                  maxlength="999"></textarea>
+                        <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`fajudgement`)" style="width:28px; height:28px; margin:0; padding:0; accent-color:#000000; cursor:pointer;" id="chk_fajudgementfaaccepted" name="chk_fajudgement" value="faaccepted">
 
-                    </div>
+                    </label>
 
-                    <div style="width:50%; height:100%; box-sizing:border-box;">
+                    <!-- FA NC BOX -->
+                    <label for="chk_fajudgementfanc" id="label_fajudgementfanc" style="width:50%; height:100%; display:flex; align-items:center; justify-content:center; margin:0; box-sizing:border-box; background-color:#ffffff; cursor:pointer;">
 
-                        <input type="hidden" name="DynamicHidden" value="fanc">
+                        <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`fajudgement`)" style="width:28px; height:28px; margin:0; padding:0; accent-color:#000000; cursor:pointer;" id="chk_fajudgementfanc" name="chk_fajudgement" value="fanc">
 
-                        <textarea type="textarea"
-                                  name="DynamicInput"
-                                  class="form-control k-textbox"
-                                  id="fanc"
-                                  rows="5"
-                                  style="display:block; width:100%; height:100%; margin-left:0px; padding:4px; border:0 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:auto; box-sizing:border-box; background-color:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px;"
-                                  required="required"
-                                  minlength="1"
-                                  maxlength="999"></textarea>
+                    </label>
 
-                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SGP COMPLIANCE -->
+        <div style="display:flex; align-items:center; width:100%; min-height:72px; padding:10px 26px; border-top:1px solid #000000; box-sizing:border-box;">
+
+            <div style="flex:0 0 138px; box-sizing:border-box; font-size:11px; line-height:18px; font-weight:bold; white-space:nowrap;">
+                SGP COMPLIANCE:
+            </div>
+
+            <input type="hidden" name="DynamicHidden" value="sgpcompliance">
+            <input type="hidden" id="sgpcompliance" name="DynamicInput">
+
+            <!-- YES -->
+            <label for="chk_sgpcomplianceyes" style="display:flex; align-items:center; gap:7px; margin:0 18px 0 0; font-size:10px; line-height:16px; white-space:nowrap; cursor:pointer;">
+
+                <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`sgpcompliance`)" style="width:14px; height:14px; margin:0; padding:0; accent-color:#000000; cursor:pointer;" id="chk_sgpcomplianceyes" name="chk_sgpcompliance" value="yes">
+
+                YES
+
+            </label>
+
+            <!-- NO RELATED -->
+            <label for="chk_sgpcompliancenorelated" style="display:flex; align-items:center; gap:7px; margin:0 20px 0 0; font-size:10px; line-height:16px; white-space:nowrap; cursor:pointer;">
+
+                <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`sgpcompliance`)" style="width:14px; height:14px; margin:0; padding:0; accent-color:#000000; cursor:pointer;" id="chk_sgpcompliancenorelated" name="chk_sgpcompliance" value="norelated">
+
+                NO RELATED
+
+            </label>
+
+            <!-- COMPLIANCE CONTROL -->
+            <div style="flex:1; display:flex; align-items:center; min-width:0; box-sizing:border-box;">
+
+                <div style="flex:0 0 154px; height:27px; display:flex; align-items:center; justify-content:center; padding:3px 5px; border:2px solid #000000; box-sizing:border-box; font-size:10px; line-height:15px; white-space:nowrap;">
+                    COMPLIANCE CONTROL NO:
+                </div>
+
+                <div style="flex:1; min-width:0; box-sizing:border-box;">
+
+                    <input type="hidden" name="DynamicHidden" value="compliancecontrol">
+                    <textarea name="DynamicInput" class="form-control k-textbox" id="compliancecontrol" data-tooggle="tooltip" data-placement="top" title="" minlength="0" maxlength="999" style="display:block; width:100%; height:27px; min-height:27px; margin:0; padding:3px 3px 1px 3px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:hidden; box-sizing:border-box; background-color:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:20px;"></textarea>
 
                 </div>
 
@@ -107,6 +139,329 @@
         </div>
 
     </div>
+
+    <script type="text/javascript">
+        (function () {
+            var faAcceptedCheckbox;
+            var faNcCheckbox;
+            var faJudgementInput;
+            var sgpNoRelatedCheckbox;
+            var sgpYesCheckbox;
+            var sgpComplianceInput;
+            var complianceControlInput;
+            var listenersAttached = false;
+
+            function loadElements() {
+                faAcceptedCheckbox =
+                    document.getElementById("chk_fajudgementfaaccepted");
+
+                faNcCheckbox =
+                    document.getElementById("chk_fajudgementfanc");
+
+                faJudgementInput =
+                    document.getElementById("fajudgement");
+
+                sgpNoRelatedCheckbox =
+                    document.getElementById("chk_sgpcompliancenorelated");
+
+                sgpYesCheckbox =
+                    document.getElementById("chk_sgpcomplianceyes");
+
+                sgpComplianceInput =
+                    document.getElementById("sgpcompliance");
+
+                complianceControlInput =
+                    document.getElementById("compliancecontrol");
+            }
+
+            function elementsAreAvailable() {
+                return (
+                    faAcceptedCheckbox &&
+                    faNcCheckbox &&
+                    faJudgementInput &&
+                    sgpNoRelatedCheckbox &&
+                    sgpYesCheckbox &&
+                    sgpComplianceInput &&
+                    complianceControlInput
+                );
+            }
+
+            function updateFaJudgementRequirement() {
+                var judgementSelected;
+
+                judgementSelected =
+                    faAcceptedCheckbox.checked ||
+                    faNcCheckbox.checked;
+
+                faAcceptedCheckbox.removeAttribute("required");
+                faNcCheckbox.removeAttribute("required");
+
+                faAcceptedCheckbox.setCustomValidity("");
+                faNcCheckbox.setCustomValidity("");
+
+                if (!judgementSelected) {
+                    faAcceptedCheckbox.setAttribute(
+                        "required",
+                        "required"
+                    );
+                }
+            }
+
+            function faAcceptedChanged() {
+                if (faAcceptedCheckbox.checked) {
+                    faNcCheckbox.checked = false;
+                }
+
+                if (typeof GetValueCheckBox === "function") {
+                    GetValueCheckBox("fajudgement");
+                }
+
+                updateFaJudgementRequirement();
+            }
+
+            function faNcChanged() {
+                if (faNcCheckbox.checked) {
+                    faAcceptedCheckbox.checked = false;
+                }
+
+                if (typeof GetValueCheckBox === "function") {
+                    GetValueCheckBox("fajudgement");
+                }
+
+                updateFaJudgementRequirement();
+            }
+
+            function updateComplianceRequirement() {
+                complianceControlInput.setCustomValidity("");
+
+                if (sgpYesCheckbox.checked) {
+                    complianceControlInput.setAttribute(
+                        "required",
+                        "required"
+                    );
+                } else {
+                    complianceControlInput.removeAttribute("required");
+                }
+            }
+
+            function sgpYesChanged() {
+                if (sgpYesCheckbox.checked) {
+                    sgpNoRelatedCheckbox.checked = false;
+                }
+
+                if (typeof GetValueCheckBox === "function") {
+                    GetValueCheckBox("sgpcompliance");
+                }
+
+                updateComplianceRequirement();
+            }
+
+            function sgpNoRelatedChanged() {
+                if (sgpNoRelatedCheckbox.checked) {
+                    sgpYesCheckbox.checked = false;
+
+                    complianceControlInput.value = "";
+                    complianceControlInput.removeAttribute("required");
+                    complianceControlInput.setCustomValidity("");
+                }
+
+                if (typeof GetValueCheckBox === "function") {
+                    GetValueCheckBox("sgpcompliance");
+                }
+
+                updateComplianceRequirement();
+            }
+
+            function splitSavedValues(savedValue) {
+                var normalizedValue;
+                var rawValues;
+                var results;
+                var index;
+                var cleanedValue;
+
+                results = [];
+
+                if (!savedValue) {
+                    return results;
+                }
+
+                normalizedValue = savedValue
+                    .replace(/\|/g, ",")
+                    .replace(/;/g, ",");
+
+                rawValues = normalizedValue.split(",");
+
+                for (
+                    index = 0;
+                    index < rawValues.length;
+                    index++
+                ) {
+                    cleanedValue =
+                        rawValues[index].trim().toLowerCase();
+
+                    if (cleanedValue !== "") {
+                        results.push(cleanedValue);
+                    }
+                }
+
+                return results;
+            }
+
+            function valueExists(values, targetValue) {
+                var normalizedTarget;
+                var index;
+
+                normalizedTarget =
+                    targetValue.toLowerCase();
+
+                for (
+                    index = 0;
+                    index < values.length;
+                    index++
+                ) {
+                    if (values[index] === normalizedTarget) {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+
+            function restoreFaJudgement() {
+                var savedValues;
+
+                if (
+                    !faJudgementInput ||
+                    !faJudgementInput.value
+                ) {
+                    return;
+                }
+
+                savedValues =
+                    splitSavedValues(
+                        faJudgementInput.value
+                    );
+
+                faAcceptedCheckbox.checked =
+                    valueExists(
+                        savedValues,
+                        faAcceptedCheckbox.value
+                    );
+
+                faNcCheckbox.checked =
+                    valueExists(
+                        savedValues,
+                        faNcCheckbox.value
+                    );
+
+                if (
+                    faAcceptedCheckbox.checked &&
+                    faNcCheckbox.checked
+                ) {
+                    faNcCheckbox.checked = false;
+                }
+            }
+
+            function restoreSgpCompliance() {
+                var savedValues;
+
+                if (
+                    !sgpComplianceInput ||
+                    !sgpComplianceInput.value
+                ) {
+                    return;
+                }
+
+                savedValues =
+                    splitSavedValues(
+                        sgpComplianceInput.value
+                    );
+
+                sgpNoRelatedCheckbox.checked =
+                    valueExists(
+                        savedValues,
+                        sgpNoRelatedCheckbox.value
+                    );
+
+                sgpYesCheckbox.checked =
+                    valueExists(
+                        savedValues,
+                        sgpYesCheckbox.value
+                    );
+
+                if (
+                    sgpNoRelatedCheckbox.checked &&
+                    sgpYesCheckbox.checked
+                ) {
+                    sgpNoRelatedCheckbox.checked = false;
+                }
+            }
+
+            function attachListeners() {
+                if (listenersAttached) {
+                    return;
+                }
+
+                faAcceptedCheckbox.addEventListener(
+                    "change",
+                    faAcceptedChanged
+                );
+
+                faNcCheckbox.addEventListener(
+                    "change",
+                    faNcChanged
+                );
+
+                sgpYesCheckbox.addEventListener(
+                    "change",
+                    sgpYesChanged
+                );
+
+                sgpNoRelatedCheckbox.addEventListener(
+                    "change",
+                    sgpNoRelatedChanged
+                );
+
+                listenersAttached = true;
+            }
+
+            function initializeForm() {
+                loadElements();
+
+                if (!elementsAreAvailable()) {
+                    return;
+                }
+
+                attachListeners();
+                restoreFaJudgement();
+                restoreSgpCompliance();
+                updateFaJudgementRequirement();
+                updateComplianceRequirement();
+            }
+
+            if (document.readyState === "loading") {
+                document.addEventListener(
+                    "DOMContentLoaded",
+                    initializeForm
+                );
+            } else {
+                initializeForm();
+            }
+
+            window.setTimeout(function () {
+                loadElements();
+
+                if (!elementsAreAvailable()) {
+                    return;
+                }
+
+                restoreFaJudgement();
+                restoreSgpCompliance();
+                updateFaJudgementRequirement();
+                updateComplianceRequirement();
+            }, 300);
+        }());
+    </script>
 
 </body>
 </html>

@@ -1,17 +1,31 @@
 
-<input type="hidden" name="DynamicHidden" value="qcmanagement">
-<input type="textbox" name="DynamicInput" class="form-control k-textbox" id="qcmanagement" 
-style="margin-left:0px;width: -webkit-fill-available;" required="required" minlength="1" maxlength="999">
+    <input type="hidden" name="DynamicHidden" value="qcmanagement">
+    <input type="textbox" name="DynamicInput" class="form-control k-textbox" id="qcmanagement" 
+    style="margin-left:0px;width: -webkit-fill-available;" required="required" minlength="1" maxlength="999">
 
-<input type="hidden" name="DynamicHidden" value="qcdate">
-<input type="date" class="form-control" name="DynamicInput" id="qcdate" 
-placeholder="Select date" inline="true" style="margin-left:0px; border-radius: 7px">
+    <input type="hidden" name="DynamicHidden" value="qcdate">
+    <input type="date" class="form-control" name="DynamicInput" id="qcdate" placeholder="Select date" inline="true" style="margin-left:0px; border-radius: 7px">
 
-<input type="hidden" name="DynamicHidden" value="faaccepted">
-<textarea type="textarea" name="DynamicInput" class="form-control k-textbox" id="faaccepted" 
-rows="5" style="margin-left:0px;width: -webkit-fill-available;" required="required" minlength="1" maxlength="999">
+    <input type="hidden" name="DynamicHidden" value="fajudgement">
+    <input type="hidden" id="fajudgement" name="DynamicInput">
 
-<input type="hidden" name="DynamicHidden" value="fanc">
-<textarea type="textarea" name="DynamicInput" class="form-control k-textbox" id="fanc" rows="5" 
-style="margin-left:0px;width: -webkit-fill-available;" required="required" minlength="1" maxlength="9">
+    <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`fajudgement`)" style="margin-left:-10px" 
+    id="chk_fajudgementfaaccepted" name="chk_fajudgement" value="faaccepted">
 
+    <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`fajudgement`)" style="margin-left:-10px" 
+    id="chk_fajudgementfanc" name="chk_fajudgement" value="fanc">
+
+    <input type="hidden" name="DynamicHidden" value="sgpcompliance">                         
+    <input type="hidden" id="sgpcompliance" name="DynamicInput">
+
+    <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`sgpcompliance`)" style="margin-left:-10px" 
+    id="chk_sgpcompliancenorelated" name="chk_sgpcompliance" value="norelated">
+
+    <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`sgpcompliance`)" style="margin-left:-10px" 
+    id="chk_sgpcomplianceyes" name="chk_sgpcompliance" value="yes">
+
+    <input type="hidden" name="DynamicHidden" value="compliancecontrol">
+    <input type="textbox" name="DynamicInput" class="form-control k-textbox" id="compliancecontrol" 
+    style="margin-left:0px;width: -webkit-fill-available;" data-tooggle="tooltip" data-placement="top" title="" minlength="0" maxlength="999">
+
+                            
