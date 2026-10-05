@@ -8,55 +8,13 @@
 
 <body style="margin:0; padding:8px; background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; color:#000000;">
 
-    <div style="width:600px; margin:0; border:2px solid #000000; box-sizing:border-box; background-color:#ffffff;">
+    <div style="width:660px; margin:0; border:2px solid #000000; box-sizing:border-box; background-color:#ffffff;">
 
-        <!-- SGP COMPLIANCE -->
-        <div style="display:flex; align-items:center; width:100%; min-height:45px; padding:5px 7px; border-bottom:1px solid #000000; box-sizing:border-box;">
-
-            <div style="flex:0 0 102px; font-size:10px; line-height:16px; font-weight:bold; white-space:nowrap;">
-                SGP COMPLIANCE:
-            </div>
-
-            <div style="flex:0 0 100px; box-sizing:border-box;">
-
-                <input type="hidden" name="DynamicHidden" value="SGPcompliance">
-                <input type="hidden" id="SGPcompliance" name="DynamicInput">
-
-                <label for="chk_SGPcomplianceyes" style="display:flex; align-items:center; gap:5px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
-                    <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`SGPcompliance`)" style="margin-left:-5px" id="chk_SGPcomplianceyes" name="chk_SGPcompliance" value="yes">
-                    YES
-                </label>
-
-            </div>
-
-            <div style="flex:0 0 125px; box-sizing:border-box;">
-
-                <label for="chk_SGPcompliancenorelated" style="display:flex; align-items:center; gap:5px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
-                    <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`SGPcompliance`)" style="margin-left:-5px" id="chk_SGPcompliancenorelated" name="chk_SGPcompliance" value="norelated">
-                    NO RELATED
-                </label>
-
-            </div>
-
-            <div style="flex:0 0 150px; font-size:10px; line-height:21px; font-weight:bold; text-align:right; white-space:nowrap;">
-                COMPLIANCE CONTROL NO.:
-            </div>
-
-            <div style="flex:1; min-width:0; padding-left:6px; box-sizing:border-box;">
-
-                <input type="hidden" name="DynamicHidden" value="complianceno">
-                <input type="textbox" name="DynamicInput" class="form-control k-textbox" id="complianceno" style="margin-left:0px; width:100%; height:23px; padding:2px 4px; border:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; box-sizing:border-box; background-color:#ffffff !important; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:17px;" required="required" minlength="1" maxlength="999">
-
-            </div>
-
-        </div>
-
-        <!-- QA TESTING ITEM -->
-        <div style="width:100%; padding:6px 7px 7px 7px; box-sizing:border-box;">
+        <div style="width:650px; padding:6px 7px 7px 7px; box-sizing:border-box;">
 
             <div style="display:flex; align-items:flex-start; width:100%; box-sizing:border-box;">
 
-                <div style="flex:0 0 102px; padding-top:1px; font-size:10px; line-height:16px; font-weight:bold; white-space:nowrap;">
+                <div style="flex:0 0 102px; padding-top:1px; box-sizing:border-box; font-size:10px; line-height:16px; font-weight:bold; white-space:nowrap;">
                     QA TESTING ITEM:
                 </div>
 
@@ -66,7 +24,7 @@
                     <input type="hidden" id="QAtesting" name="DynamicInput">
 
                     <label for="chk_QAtestingNorequired" style="display:flex; align-items:center; gap:5px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
-                        <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" style="margin-left:-5px" id="chk_QAtestingNorequired" name="chk_QAtesting" value="Norequired">
+                        <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" style="margin:0; width:13px; height:13px;" id="chk_QAtestingNorequired" name="chk_QAtesting" value="Norequired">
                         NO REQUIRED
                     </label>
 
@@ -74,8 +32,8 @@
 
                 <div style="flex:0 0 145px; box-sizing:border-box;">
 
-                    <label for="chk_QAtestingrequired" style="display:flex; align-items:center; gap:5px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
-                        <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" style="margin-left:-5px" id="chk_QAtestingrequired" name="chk_QAtesting" value="required">
+                    <label for="chk_QAtestingrequired" style="display:flex; align-items:center; gap:5px; margin-right:5px; font-size:10px; line-height:16px; white-space:nowrap;">
+                        <input class="myBox" required="" type="checkbox" onchange="GetValueCheckBox(`QAtesting`)" style="margin:0; width:13px; height:13px;" id="chk_QAtestingrequired" name="chk_QAtesting" value="required">
                         REQUIRED, PLEASE TICK:
                     </label>
 
@@ -87,22 +45,22 @@
                     <input type="hidden" id="tick" name="DynamicInput">
 
                     <label for="chk_tickfunctionality" style="display:flex; align-items:center; gap:5px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
-                        <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)"  id="chk_tickfunctionality" name="chk_tick" value="functionality">
+                        <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" style="margin:0; width:13px; height:13px;" id="chk_tickfunctionality" name="chk_tick" value="functionality">
                         FUNCTIONALITY
                     </label>
 
                     <label for="chk_tickdurability" style="display:flex; align-items:center; gap:5px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
-                        <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" id="chk_tickdurability" name="chk_tick" value="durability">
+                        <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" style="margin:0; width:13px; height:13px;" id="chk_tickdurability" name="chk_tick" value="durability">
                         DURABILITY
                     </label>
 
                     <label for="chk_tickstrength" style="display:flex; align-items:center; gap:5px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
-                        <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" id="chk_tickstrength" name="chk_tick" value="strength">
+                        <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" style="margin:0; width:13px; height:13px;" id="chk_tickstrength" name="chk_tick" value="strength">
                         STRENGTH
                     </label>
 
-                    <label for="chk_tickassemblytest" style="display:flex; align-items:center; gap:5px; margin:0; font-size:10px; line-height:16px; white-space:nowrap;">
-                        <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" id="chk_tickassemblytest" name="chk_tick" value="assemblytest">
+                    <label for="chk_tickassemblytest" style="display:flex; align-items:center; gap:5px; margin-right:0; font-size:10px; line-height:16px; white-space:nowrap;">
+                        <input class="myBox" type="checkbox" onchange="GetValueCheckBox(`tick`)" style="margin:0; width:13px; height:13px;" id="chk_tickassemblytest" name="chk_tick" value="assemblytest">
                         ASSEMBLY TEST
                     </label>
 
@@ -110,17 +68,16 @@
 
             </div>
 
-            <!-- TESTING ITEM -->
             <div style="display:flex; align-items:center; width:100%; margin-top:5px; box-sizing:border-box;">
 
-                <div style="flex:0 0 190px; font-size:10px; line-height:20px; font-weight:bold; text-align:right; white-space:nowrap;">
+                <div style="flex:0 0 190px; box-sizing:border-box; font-size:10px; line-height:20px; font-weight:bold; text-align:right; white-space:nowrap;">
                     TESTING ITEM:
                 </div>
 
                 <div style="flex:1; padding-left:6px; box-sizing:border-box;">
 
                     <input type="hidden" name="DynamicHidden" value="testing_item">
-                    <input type="textbox" name="DynamicInput" class="form-control k-textbox" id="testing_item" style="margin-left:0px; width:100%; height:22px; padding:1px 3px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; box-sizing:border-box; background-color:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:18px;" data-tooggle="tooltip" data-placement="top" title="" minlength="0" maxlength="999">
+                    <textarea name="DynamicInput" class="form-control k-textbox" id="testing_item" data-tooggle="tooltip" data-placement="top" title="" minlength="0" maxlength="999" style="display:block; width:100%; height:22px; min-height:22px; margin:0; padding:1px 3px; border:0 !important; border-bottom:1px solid #000000 !important; border-radius:0 !important; box-shadow:none !important; outline:none !important; resize:none; overflow:hidden; box-sizing:border-box; background-color:transparent !important; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:18px;"></textarea>
 
                 </div>
 
@@ -134,33 +91,15 @@
 
     <script type="text/javascript">
         (function () {
-            var sgpNoRelatedCheckbox;
-            var sgpYesCheckbox;
-            var complianceNumberInput;
-            var sgpComplianceInput;
-
             var noRequiredCheckbox;
             var requiredCheckbox;
             var tickCheckboxes;
             var testingItemInput;
             var qaTestingInput;
             var tickInput;
-
             var listenersAttached = false;
 
             function loadElements() {
-                sgpNoRelatedCheckbox =
-                    document.getElementById("chk_SGPcompliancenorelated");
-
-                sgpYesCheckbox =
-                    document.getElementById("chk_SGPcomplianceyes");
-
-                complianceNumberInput =
-                    document.getElementById("complianceno");
-
-                sgpComplianceInput =
-                    document.getElementById("SGPcompliance");
-
                 noRequiredCheckbox =
                     document.getElementById("chk_QAtestingNorequired");
 
@@ -178,6 +117,17 @@
 
                 tickInput =
                     document.getElementById("tick");
+            }
+
+            function elementsAreAvailable() {
+                return (
+                    noRequiredCheckbox &&
+                    requiredCheckbox &&
+                    tickCheckboxes &&
+                    testingItemInput &&
+                    qaTestingInput &&
+                    tickInput
+                );
             }
 
             function isAnyTickChecked() {
@@ -229,70 +179,6 @@
                 if (typeof GetValueCheckBox === "function") {
                     GetValueCheckBox("tick");
                 }
-            }
-
-            function updateSgpModeRequirement() {
-                var modeSelected;
-
-                modeSelected =
-                    sgpNoRelatedCheckbox.checked ||
-                    sgpYesCheckbox.checked;
-
-                sgpNoRelatedCheckbox.removeAttribute("required");
-                sgpYesCheckbox.removeAttribute("required");
-
-                sgpNoRelatedCheckbox.setCustomValidity("");
-                sgpYesCheckbox.setCustomValidity("");
-
-                if (!modeSelected) {
-                    sgpNoRelatedCheckbox.setAttribute(
-                        "required",
-                        "required"
-                    );
-                }
-            }
-
-            function updateComplianceRequirement() {
-                complianceNumberInput.setCustomValidity("");
-
-                if (sgpYesCheckbox.checked) {
-                    complianceNumberInput.setAttribute(
-                        "required",
-                        "required"
-                    );
-                } else {
-                    complianceNumberInput.removeAttribute("required");
-                }
-            }
-
-            function sgpNoRelatedChanged() {
-                if (sgpNoRelatedCheckbox.checked) {
-                    sgpYesCheckbox.checked = false;
-
-                    complianceNumberInput.value = "";
-                    complianceNumberInput.removeAttribute("required");
-                    complianceNumberInput.setCustomValidity("");
-                }
-
-                if (typeof GetValueCheckBox === "function") {
-                    GetValueCheckBox("SGPcompliance");
-                }
-
-                updateSgpModeRequirement();
-                updateComplianceRequirement();
-            }
-
-            function sgpYesChanged() {
-                if (sgpYesCheckbox.checked) {
-                    sgpNoRelatedCheckbox.checked = false;
-                }
-
-                if (typeof GetValueCheckBox === "function") {
-                    GetValueCheckBox("SGPcompliance");
-                }
-
-                updateSgpModeRequirement();
-                updateComplianceRequirement();
             }
 
             function updateQaModeRequirement() {
@@ -392,7 +278,8 @@
             }
 
             function splitSavedValues(savedValue) {
-                var parts;
+                var normalizedValue;
+                var rawValues;
                 var results;
                 var index;
                 var cleanedValue;
@@ -403,23 +290,19 @@
                     return results;
                 }
 
-                parts = savedValue.split(",");
+                normalizedValue = savedValue
+                    .replace(/\|/g, ",")
+                    .replace(/;/g, ",");
 
-                if (parts.length === 1) {
-                    parts = savedValue.split(";");
-                }
-
-                if (parts.length === 1) {
-                    parts = savedValue.split("|");
-                }
+                rawValues = normalizedValue.split(",");
 
                 for (
                     index = 0;
-                    index < parts.length;
+                    index < rawValues.length;
                     index++
                 ) {
                     cleanedValue =
-                        parts[index].trim().toLowerCase();
+                        rawValues[index].trim().toLowerCase();
 
                     if (cleanedValue !== "") {
                         results.push(cleanedValue);
@@ -447,38 +330,6 @@
                 }
 
                 return false;
-            }
-
-            function restoreSgpMode() {
-                var savedValues;
-
-                if (
-                    !sgpComplianceInput ||
-                    !sgpComplianceInput.value
-                ) {
-                    return;
-                }
-
-                savedValues =
-                    splitSavedValues(
-                        sgpComplianceInput.value
-                    );
-
-                sgpNoRelatedCheckbox.checked =
-                    valueExists(
-                        savedValues,
-                        sgpNoRelatedCheckbox.value
-                    );
-
-                sgpYesCheckbox.checked =
-                    valueExists(
-                        savedValues,
-                        sgpYesCheckbox.value
-                    );
-
-                if (sgpYesCheckbox.checked) {
-                    sgpNoRelatedCheckbox.checked = false;
-                }
             }
 
             function restoreQaMode() {
@@ -549,16 +400,6 @@
                     return;
                 }
 
-                sgpNoRelatedCheckbox.addEventListener(
-                    "change",
-                    sgpNoRelatedChanged
-                );
-
-                sgpYesCheckbox.addEventListener(
-                    "change",
-                    sgpYesChanged
-                );
-
                 noRequiredCheckbox.addEventListener(
                     "change",
                     noRequiredChanged
@@ -586,29 +427,13 @@
             function initializeForm() {
                 loadElements();
 
-                if (
-                    !sgpNoRelatedCheckbox ||
-                    !sgpYesCheckbox ||
-                    !complianceNumberInput ||
-                    !sgpComplianceInput ||
-                    !noRequiredCheckbox ||
-                    !requiredCheckbox ||
-                    !testingItemInput ||
-                    !qaTestingInput ||
-                    !tickInput
-                ) {
+                if (!elementsAreAvailable()) {
                     return;
                 }
 
                 attachListeners();
-
-                restoreSgpMode();
                 restoreQaMode();
                 restoreTicks();
-
-                updateSgpModeRequirement();
-                updateComplianceRequirement();
-
                 updateQaModeRequirement();
                 updateQaConditionalRequirements();
             }
@@ -625,27 +450,14 @@
             window.setTimeout(function () {
                 loadElements();
 
-                if (
-                    sgpNoRelatedCheckbox &&
-                    sgpYesCheckbox &&
-                    complianceNumberInput &&
-                    sgpComplianceInput &&
-                    noRequiredCheckbox &&
-                    requiredCheckbox &&
-                    testingItemInput &&
-                    qaTestingInput &&
-                    tickInput
-                ) {
-                    restoreSgpMode();
-                    restoreQaMode();
-                    restoreTicks();
-
-                    updateSgpModeRequirement();
-                    updateComplianceRequirement();
-
-                    updateQaModeRequirement();
-                    updateQaConditionalRequirements();
+                if (!elementsAreAvailable()) {
+                    return;
                 }
+
+                restoreQaMode();
+                restoreTicks();
+                updateQaModeRequirement();
+                updateQaConditionalRequirements();
             }, 300);
         }());
     </script>
